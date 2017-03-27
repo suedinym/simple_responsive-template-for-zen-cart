@@ -25,7 +25,7 @@ This add-on was created in the hope that it will be useful, but WITHOUT ANY WARR
 
 ### WHAT DOES THIS ADD-ON DO?
 
-This add-on template allows people who are still using the basic Classic template, and have modified little beyond the images and CSS to make their site responsive.
+This add-on template allows people who are still using the basic Classic template, and have modified little beyond the images and CSS to make their Zen Cart site responsive.
 
 ### WHAT'S IN THE DOWNLOAD?
 
@@ -156,6 +156,7 @@ Instead of copying the files from the add-on into YOUR_TEMPLATE, you will be mak
 By doing it this way, instead of having to 'uninstall' the add-on if you're not fond of the result, all you have to do is return to YOUR_TEMPLATE using the admin tools.
 
 Copy your CSS files and images from the backup, either from the Classic Template, or your Custom template into the corresponding folders in the add-on.
+```
 
 └── includes
     ├── extra_datafiles
@@ -172,7 +173,7 @@ Copy your CSS files and images from the backup, either from the Classic Template
             │   ├── YOUR_TEMPLATE_logo.jpg
             │   └── YOUR_TEMPLATE_header_bg.jpg
             └── template_info.php
-
+```
 (If you have gone further and placed Custom template files in other locations, you know where they are, and should know how to add them to this template.)
 
 ### CUSTOMIZE
@@ -238,13 +239,13 @@ NOTE! You should already be loading jquery.min.js as it is included in the html 
 There are currently no known bugs/ these known bugs.
 
 ### Contributing 
-If you see a bug and know how to fix it, please make a pull request at
+If you see a bug and know how to fix it, please make a pull request at <https://github.com/suedinym/simple_responsive-template-for-zen-cart/pulls>
 
 
 ## SUPPORT 
 Please direct support questions:
-- On the zen-cart add-on thread at: <http://getskeleton.com>
-- Or at github: <http://getskeleton.com>
+- On the zen-cart add-on thread at: <http://example.com>
+- Or at github: <https://github.com/suedinym/simple_responsive-template-for-zen-cart/issues>
 
 ### UNINSTALL
 This add-on lives entirely in the override system, so there is no need to remove it. Simply switch back to your custom template using the admin panel.

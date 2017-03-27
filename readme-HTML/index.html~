@@ -487,8 +487,8 @@ Open simple_responsive_column_widths.php with your favorite code editor. There a
 				
 				<p>Please post support questions:
 				<ul>
-				<li>On the zen-cart add-on thread at: <a href="http://getskeleton.com" target="blank" >Zen cart add-on Thread</li>
-				<li>Or at github: <a href=" http://getskeleton.com" target="blank">Repository </a></li>
+				<li>On the zen-cart add-on thread at: <a href="http://example.com" target="blank" >Zen cart add-on Thread</li>
+				<li>Or at github: <a href="https://github.com/suedinym/simple_responsive-template-for-zen-cart/issues" target="blank">simple_responsive issues at Github </a></li>
 				
 				</ul>
 
@@ -511,7 +511,7 @@ Restore your <span class="tomato-txt">includes/templaes/YOUR_TEMPLATE/css/index_
 			<div id="bugs">
 				<h2>Bugs</h2>
 				<p>There are currently no known bugs known bugs.</p>
-				<p>If you see a bug and know how to fix it, please make a pull request at Github.</p>
+				<p>If you see a bug and know how to fix it, please make a <a href="https://github.com/suedinym/simple_responsive-template-for-zen-cart/pulls">  pull request at Github.</a></p>
 			</div>
 			<div id="downloads">
 				<h2>Additional Add-ons</h2>
