@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Try it!</title>
+>
+<meta name="author" content="sue" />
+<meta name="generator" content="Bluefish 2.2.7" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
+
+
+
+<!--  Google Font and Font Awesome  -->
+<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="tryit-css/stylesheet.css" />
+<link rel="stylesheet" type="text/css" href="tryit-css/stylesheet_a-slidingnav.css" />
+
+
+
+</head>
+
+<body id="indexHomeBody"
+
+	
+				
+
+
+	
+<div id="mainWrapper">
+
+
+
+<!--bof-header logo and navigation display-->
+
+
+<!--  <div id="headerWrapper">  -->
+<!--bof-navigation display-->
+<!--  <div id="navMainWrapper">  -->
+<!-- <div id="navMain"> -->
+<header>
+<div class="top-header-bar dkgry">
+<ul class="top-bar">
+  <!--   <ul class="back"> --><li> <a  class="hamburger" href="#slidingSideNav">&#9776;</a> </li>
+
+
+
+
+</ul>
+</div>
+
+
+  
+   
+<!-- sliding side navigation
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<!-- Overlay content -->
+	<div class="overlay" id="slidingSideNav">
+	  <a class="sideClosebtn" href="#">&times;</a>
+		<div class="side-overlay-content">
+	
+ <h1 class="side-nav-header">Shop by Category</h1> 
+<!-- <aside > -->   
+ <!--bof-optional top level category links on the side navigation display-->
+<a href="#1">Hardware</a>
+<a href="http://zen-skeleton.com/index.php?main_page=index&amp;cPath=2">Software</a><a href="#3">DVD Movies</a><a href="http://zen-skeleton.com/index.php?main_page=index&amp;cPath=21">Gift Certificates</a><a href="#22">Big Linked</a><a href="http://zen-skeleton.com/index.php?main_page=index&amp;cPath=23">Test Examples</a><a href="#28">Test 10%</a><a href="http://zen-skeleton.com/index.php?main_page=index&amp;cPath=25">Test 10% by Attrib</a><a href="#24">Free Call Stuff</a><a href="http://zen-skeleton.com/index.php?main_page=index&amp;cPath=33">A Top Level Cat</a><a href="#48">Sale Percentage</a><a href="http://zen-skeleton.com/index.php?main_page=index&amp;cPath=49">Sale Deduction</a><a href="#50">Sale New Price</a><a href="http://zen-skeleton.com/index.php?main_page=index&amp;cPath=53">Big Unlinked</a><a href="#54">New v1.2</a><a href="http://zen-skeleton.com/index.php?main_page=index&amp;cPath=62">Music</a><a href="#63">Documents</a><a href="http://zen-skeleton.com/index.php?main_page=index&amp;cPath=64">Mixed Product Types</a><!--eof-optional categories tabs navigation display-->
+
+ <!--  	</aside>  -->
+		</div>
+	</div> 
+	  
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<meta charset="utf-8">
+	<title>Name of Package | by Susan Jensen</title>
+	<meta content="" name="description">
+	<meta content="sue" name="author"><!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<meta content="width=device-width, initial-scale=1" name="viewport"><!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"><!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/skeleton.css" rel="stylesheet">
+	<link href="css/base.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700|Handlee" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"><!-- JavaScript
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link href="images/favicon.png" rel="icon" type="image/png">
+</head>
+<body>
+<!-- <a class="hamburger" href="#slidingSideNav">&#9776;</a> -->
+	<header>
+			<nav>
+		
+			<ul class="top-bar" id="toc-a">
+				<li>
+			<a class="hamburger" href="#slidingSideNav">&#9776;</a>
+	</li>
+		
+				<li>
+					<a href="#features">Features</a>
+				</li>
+				<li>
+					<a href="#support">Support</a>
+				</li>
+				<li>
+					<a href="#bugs">Bugs</a>
+				</li>
+		
+				<li>
+					<a href="#credits">Credits</a>
+				</li>
+				
+				<li>
+					<a href="#downloads">Additional Add-ons</a>
+				</li>
+						<li>
+					<a class="dropdown" href="#install">Installation Proceedure <i class="fa fa fa-caret-down fa-lg"></i></a>
+		
+					<ul class="flyout">
+						<li>
+							<a href="#pre-install"><i class="fa fa-check-circle-o"></i> Back Up Your Site!</a>
+						</li>
+							<li>
+								<a href="#install"><i class="fa fa-check-circle-o"></i> Extract Zips</a>
+							</li>
+						<li>
+							<a href="#prepare"><i class="fa fa-check-circle-o"></i> Prepare Add-on Files</a>
+						</li>
+						<li>
+							<a href="#customize"><i class="fa fa-check-circle-o"></i> Customize</a>
+						</li>
+						<li>
+							<a href="#upload"><i class="fa fa-check-circle-o"></i> Upload</a>
+						</li>
+						
+					</ul>
+				</li>
+			</ul>
+		
+		</nav><!-- sliding side navigation
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<!-- Overlay content -->
+		<div class="overlay" id="slidingSideNav">
+			<a class="sideClosebtn" href="#">&times;</a>
+			<div class="side-overlay-content">
+				<ol id="toc-b">
+					<li>
+						<a href="#features">Features</a>
+					</li>
+				
+					<li>
+						<a href="#install">Install</a>
+						<ul class="side-nav-small">
+							<li>
+								<a href="#pre-install"><i class="fa fa-check-circle-o"></i> Back Up Your Site!</a>
+							</li>
+								<li>
+								<a href="#install"><i class="fa fa-check-circle-o"></i> Extract Zips</a>
+							</li>
+							<li>
+								<a href="#prepare"><i class="fa fa-check-circle-o"></i> Prepare Add-on Files</a>
+								
+								
+							</li>
+								<li>
+								<a href="#customize"><i class="fa fa-check-circle-o"></i> Customize</a>
+							</li>
+							<li>
+								<a href="#upload"><i class="fa fa-check-circle-o"></i> Upload</a>
+							</li>
+						
+						</ul>
+					</li>
+				
+						<li>
+						<a href="#support">Support</a>
+					</li>
+					<li>
+						<a href="#bugs">Bugs</a>
+					</li>
+					<li>
+						<a href="#downloads">Additional Add-ons</a>
+					</li>
+						<li>
+						<a href="#credits">Credits</a>
+					</li>
+				</ol>
+			</div>
+		</div>
+		<div class="logo-header">
+			<img class="logo" src="images/logo.png">
+			<h3>Name of Package</h3>
+			<h5>Add-on For Zen Cart</h5>
+		</div>
+		<div class="share-bar">
+			<div style="margin-left: 2em">
+				<a class="fa fa-github" href="https://github.com/suedinym" target="blank"></a> <a class="fa fa-linkedin" href="https://www.linkedin.com/in/susanjeanjensen" target="blank"></a> <a class="fa fa-codepen" href="https://codepen.io/suedinym" target="blank"></a>
+			</div>
+		</div><br class="clear">
+	</header>
+	<hr>
+	<div class="container">
+		<div class="tab-section">
+			<div id="features">
+				<h2>Features</h2>
+						<ul>
+			<li>Completely customizable</li>
+			<li>Add your images, and links</li>
+			<li>Cool asymmetrical, rotating images</li>
+			<li>Cross browser compatible with Firefox, Chrome, Safari, and ie9.  Degrades gracefully for ie8 and less, just doesn't show the cool asymmetrical images.</li>
+			<li>No changes to core files</li>
+			<li>Easy Installation</li>
+			<li>Detailed HTML readme file with written instructions and screenshots, and links to videos for the installation and customization steps.</li>
+			<li>Fully compatible with versions 1.3.8x, 1.3.9x, 1.5x.  Would probably work with lower versions although it has not been tested.</li>
+			<li>Cleaner home page layout</li>
+			<li>User has option to select which modules to view</li>
+			<li>Smooth jQuery fade in effect when changing tabs</li>
+		   <li>Customize tabs easily to match your site design using the stylesheet</li>
+			<li>W3C Valid XHTML and CSS</li>
+			<li>Cross Browser Compatible</li>
+			<li>No changes to core files</li>
+			<li>Easy Installation</li>
+			<li>Detailed HTML readme file with written instructions and screenshots, and links to videos for the installation and customization steps.</li>
+			<li>Fully compatible with versions 1.3.8x, 1.3.9x, 1.5x.  Would probably work with lower versions although it has not been tested.</li>
+		</ul>
+			</div>
+			<div id="support">
+				<h2>Support</h2>
+				<div class="border-left">
+	<h3>To Un-Install the Plugin:</h3>
+	</div>
+<p>
+Remove all files in the plugin package.
+</p>
+<p>
+Restore your backup for <span class="tomato-txt">includes/templates/YOUR_TEMPLATE/common/tpl_main_page.php</span>.</p>
+<p>
+Restore your <span class="tomato-txt">includes/templaes/YOUR_TEMPLATE/css/index_home.css</span> file.
+</p>
+
+			</div>
+			<div id="install">
+				<h2>Extract Zips</h2>
+				<p>You should now have two zip files:
+				<ol><li>Your site backup</li>
+				<li>The add-on download</li>
+				</ol>
+				</p>
+				<p>Extract both to a convenient location. (After this step, you should see both the zip file and the extracted folders in your directory.)</p>
+				<br>
+				<div>   ├── common<br />
+   ├── css<br />
+   ├── info_shopping_cart<br />
+   └── templates</div>
+			</div>
+			<div id="pre-install">
+				<h2>Back Up Your Site!</h2>
+				<p><a href="https://documentation.cpanel.net/display/ALD/Backup+Wizard">How to make a backup with cPanel. </a>
+				<p><a href="https://youtu.be/IMmbjI00Xo0?list=PLZk46idJS6s54hAX8K79_AY8brgBwPtHd">cPanel Tutorials: Account Backups Video. </a>
+				</p>
+					<p><a href="">How to make a backup (i.e. download your site) with FileZilla (i.e. download your site). </a></p>
+					<p>You may also wish to consult the help section of your hosting company. </p>
+					
+					
+			</div>
+			<div id="prepare">
+				<h2>Prepare Add-on Files</h2>
+				<!-- code converter http://www.freebits.co.uk/convert-html-code-to-text.html -->
+				<code >&lt;a  class="hamburger" href="#slidingSideNav"&gt;&amp;#9776;&lt;/a&gt;</code>
+					<br><br><code>&lt;?php echo '&lt;a href="' . HTTP_SERVER . DIR_WS_CATALOG . '"&gt;'; ?&gt;&lt;?php echo HEADER_TITLE_CATALOG_ICON; ?&gt;&lt;/a&gt;</code>
+					
+			</div>
+			<div id="upload">
+				<h2>Upload</h2>
+					<p><a href="https://documentation.cpanel.net/display/ALD/File+Manager">About cPanel File Manager and how to upload files. (Go to the file manager and right-click on files or folders to select from a menu of actions.) </a>
+						<p><a href="https://youtu.be/aFAeyS-sByE?list=PLZk46idJS6s54hAX8K79_AY8brgBwPtHd">cPanel Tutorials: FTP (file transfer/uploading) Video. </a>
+				</p>
+				</p>
+					<p><a href="https://wiki.filezilla-project.org/FileZilla_Client_Tutorial_(en)#Uploading">How to upload using FileZilla. </a></p>
+					<p>You may also wish to consult the help section of your hosting company. </p>
+			</div>
+			<div id="customize">
+				<h2>Customize</h2>
+				<p>Bla bla bla...</p>
+			</div>
+			<div id="credits">
+				<h2>Credits</h2>
+				<p>Bla bla bla...</p>
+			</div>
+			<div id="bugs">
+				<h2>Bugs</h2>
+				<p>Bla bla bla...</p>
+			</div>
+			<div id="downloads">
+				<h2>Additional Add-ons</h2>
+				<p>Bla bla bla...</p>
+			</div>
+		</div>
+	</div><!-- end container -->
+	<!-- Footer Container
+    ================================================== -->
+	<footer>
+		<hr>
+		<div class="footer-container centertxt">
+			<p>&copy; Susan Jensen 2017 | <a href="http://suedinym.com">www.suedinym.com</a><br>
+			<p><a href="https://suedinym.github.io" >Suedinym.github.io</a></p>
+			All Rights Reserved</p>
+		</div>
+	</footer><!-- end footer container -->
+	<!-- start SCRIPT THAT OPERATES THE NAVIGATION -->
+	<script src="activatables.js" type="text/javascript">
+	</script> 
+	<script type="text/javascript">
+	   activatables('section', ['features', 'support', 'install', 'credits', 'bugs', 'downloads']);
+	</script> <!-- END SCRIPT THAT OPERATES THE NAVIGATION -->
+	 <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<script src="js/activatables.js" type="text/javascript">
+	</script> 
+	<script type="text/javascript">
+	   //<![CDATA[
+	      activatables('section', ['features', 'support', 'install', 'pre-install', 'prepare', 'upload', 'customize', 'credits', 'bugs', 'downloads']);
+	   //]]>
+	</script>
+</body>
+</html>

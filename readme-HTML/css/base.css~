@@ -1,0 +1,473 @@
+	/*
+* Skeleton V2.0.4
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/29/2014
+*/
+
+
+/*
+* SkinAndBones-Skeleton
+* Copyright 2015 -2017, Susan Jensen
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+*/
+
+
+/*Font Awesome by Dave Gandy - http://fontawesome.io*/
+
+
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+- Reset & Basics (commented out, for debugging)
+- Base Styles
+- Typography
+- Header
+- Logo
+- Find and Share icons
+- Horizontal Navigation
+- Breadcrumbs
+- Sliding top and vertical navigation
+- Footer
+- Misc
+- Media Queries
+*/
+
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* NOTE
+html is set to 62.5% so that all the REM measurements throughout Skeleton
+are based on 10px sizing. So basically 1.5rem = 15px :) */
+
+html {
+	font-size: 62.5%;
+}
+body {
+	font-size: 1.5em;
+	/* currently ems cause chrome bug misinterpreting rems on body element */
+	line-height: 1.6;
+	font-weight: 400;
+	font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #222;
+	background-image: url(../images/bg/grid-tile.jpg);
+}
+
+/* add class to any text or item to center*/
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+.centertxt {
+	text-align: center;
+}
+.credits {
+	background-color: #262626;
+	font-family: 'Cherry Cream Soda', cursive;
+	/*
+font-family: 'Righteous', cursive;*/
+}
+.bss-slides {
+	border: 6px solid #666;
+}
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+	margin-bottom: 2rem;
+	font-weight: 300;
+}
+h1 {
+	font-size: 4.0rem;
+	line-height: 1.2;
+	letter-spacing: -.1rem;
+}
+h2 {
+	font-size: 3.6rem;
+	line-height: 1.25;
+	letter-spacing: -.1rem;
+}
+h3 {
+	font-size: 3.0rem;
+	line-height: 1.3;
+	letter-spacing: -.1rem;
+}
+h4 {
+	font-size: 2.4rem;
+	line-height: 1.35;
+	letter-spacing: -.08rem;
+}
+h5 {
+	font-size: 1.8rem;
+	line-height: 1.5;
+	letter-spacing: -.05rem;
+}
+h6 {
+	font-size: 1.5rem;
+	line-height: 1.6;
+	letter-spacing: 0;
+}
+
+/* Larger than phablet */
+
+@media (min-width: 550px) {
+	h1 {
+		font-size: 5.0rem;
+	}
+	h2 {
+		font-size: 4.2rem;
+	}
+	h3 {
+		font-size: 3.6rem;
+	}
+	h4 {
+		font-size: 3.0rem;
+	}
+	h5 {
+		font-size: 2.4rem;
+	}
+	h6 {
+		font-size: 1.5rem;
+	}
+}
+p {
+	margin-top: 0;
+}
+/*blueish*/
+
+a, ol#toc li a, ol#toc-footer li a, ol#toc-header li a {
+	color: #084B8A;
+}
+
+/* purple */
+
+h3, h4, ol#toc li a:hover, ol#toc-footer li a:hover, ol#toc-header li a:hover {
+	color: #68228B;
+}
+
+/*burgundy*/
+
+hr, h1, h2 {
+	color: #85193a;
+}
+div.tab-section {
+	margin-top: 2rem;
+   background-color: #f3f4ef;
+	background-image: url(../images/bg/crumpled-paper.jpg);
+	border: solid 12px #f1eee9;
+	padding: 2rem;
+}
+div.inactive {
+	display: none;
+}
+
+
+/* Header
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.fa-check-circle-o {color: #ccc;}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: .6rem;
+    width: 100%;
+	background: rgba(255, 255, 255, 0.6);
+	position: relative;
+	box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
+}
+
+nav li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+}
+nav a {
+  	padding: 2px 10px;
+	letter-spacing: 1px;
+	color: #333;
+	text-shadow: 0px 1px 1px #fff;
+    display: block;
+     font: inherit;
+    padding: 0 25px;
+     text-decoration: none;
+
+}
+
+
+nav li:hover a {
+  	background: rgba(255, 255, 255, 0.6);
+  	color:  #084B8A;
+}
+nav li ul {
+    left: 0;
+    opacity: 0;
+    position: absolute;
+ /*   top: 35px;*/
+    visibility: hidden;
+    z-index: 1;
+}
+nav li:hover ul {
+    opacity: 0.9;
+     visibility: visible;
+}
+nav li ul li {
+    width: 100%;
+}
+nav li ul a:hover {
+    background: #bbb;
+}
+
+/* FONT STYING AND DECORATION */
+
+ol#toc-a li a {
+	text-decoration: none;
+	font-family: "Courier New", Courier, monospace
+}
+ol#toc-a li a:hover, a.active {
+	font-weight: bold;
+}
+
+.tomato-txt {color: tomato;}
+/* #Logo
+================================================== */
+
+.logo {
+	background: #fff;
+	margin: 0 5rem 0 5rem;
+	float: left;
+	width: 7%;
+	border-radius: 10px;
+	box-shadow: .5rem .5rem 1rem #414a49;
+	z-index: -1;
+}
+.logo-header {
+	margin-top: 2rem;
+
+}
+.logo-header h3 {
+	font-size: 2.75rem;
+	padding-top: 1.75rem;
+}
+.logo-header h5 {
+	font-size: 1.75rem;
+	padding-top: 0;
+}
+@media only screen and (max-width: 479px) {
+	.logo-header h1 {
+		font-size: 3rem;
+	}
+	.logo-header {
+		margin-left: 2rem;
+	}
+	.logo {
+		display: none;
+	}
+}
+
+/* sliding  vertical navigation
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+	#slidingSideNav {
+		height: 100%;
+		width: 0%;
+	}
+	#slidingSideNav:target {
+		width: 40%;
+	}
+	.overlay {
+		position: fixed;
+		z-index: 10;
+		top: 0;
+		left: 0;
+	background: #f6f2e7; /*#f8f0dd;  #f9edd3;#f1eee9;*/
+		overflow-y: hidden;
+		transition: 0.5s;
+		border-right: 1px solid #ccc;
+	}
+	 .side-overlay-content {
+		position: relative;
+		top: 5%;
+		width: 100%;
+		margin-top: 1.5rem;
+		list-style: none;
+	}
+ .overlay ol, .overlay ul {	list-style: none;
+ padding-left: 1.5rem;}
+	.side-overlay-content {
+		text-align: left;
+	}
+	.overlay a {
+		padding: 1rem 3rem;
+		text-decoration: none;
+		font-size: 1.75rem;
+		color: #818181;
+		display: block;
+		transition: 0.3s;
+	}
+	.overlay a:hover, .overlay a:focus {
+		color:  #084B8A;
+	}
+
+	a.sideClosebtn {
+		position: absolute;
+		top: 2%;
+		right: 5%;
+		font-size: 2em;
+	}
+	@media screen and (max-height: 450px) {
+		.overlay {
+			overflow-y: auto;
+		}
+		.overlay a {
+			font-size: 2rem;
+		}
+	}
+	@media only screen and (max-width: 479px) {
+		#slidingSideNav:target {
+			width: 100%;
+		}
+		.sideClosebtn {
+			right: 2%;
+		}
+	}
+/* Main content */
+
+.main {
+	margin-top: 3rem;
+}
+	
+  	/* #vertical share icons
+================================================== */
+
+	.share-bar {
+		color: purple;
+      position: absolute;
+		right: 2%;
+		top: 8%;
+		text-align: center;
+		float: right;
+	}
+	.share-bar a {
+		display: block;
+	;
+	 text-align: center;
+	  margin:  1rem;
+	 padding: 7px;
+	 color: white;
+			 opacity: 0.6;
+   background: #084B8A;
+    font-size: 1.25rem;
+     border-radius: 50%;
+		text-shadow: .5rem .5rem 1rem rgba(0, 0, 0, 0.6);
+		
+	}
+	.share-bar a:hover {
+		color: #999;c
+		opacity: 1;
+	}
+
+/* Code
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+code, .tree {
+  padding: .2rem .5rem;
+  margin: 0 .2rem;
+  font-size: 90%;
+  white-space: nowrap;
+  background: #F1F1F1;
+  border: 1px solid #E1E1E1;
+  border-radius: 4px; }
+pre > code {
+  display: block;
+  padding: 1rem 1.5rem;
+  white-space: pre; }
+  
+  /* tree structure https://two-wrongs.com/draw-a-tree-structure-with-only-css
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.clt, .clt ul, .clt li {
+     position: relative;
+}
+
+.clt ul {
+    list-style: none;
+    padding-left: 32px;
+}
+
+.clt li::before, .clt li::after {
+    content: "";
+    position: absolute;
+    left: -12px;
+}
+
+.clt li::before {
+    border-top: 1px solid #000;
+    top: 9px;
+    width: 8px;
+    height: 0;
+}
+
+.clt li::after {
+    border-left: 1px solid #000;
+    height: 100%;
+    width: 0px;
+    top: 2px;
+}
+
+.clt ul > li:last-child::after {
+    height: 8px;
+}
+
+.burg {color: red;
+}
+.green {color: #264d00;}
+.blue {color: #002db3;}
+.fuscia {color: #990099;}
+
+
+	/* #Footer
+================================================== */
+	footer p, footer a {
+		color: #4d4d4d;
+		font-size: 1.2rem;
+	}
+	footer a:hover {
+		color: #BBBBBB;
+	}
+	.copyright, .copyright a {
+		font-size: .9rem;
+	}
+	/* Misc
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+	hr {
+		margin-top: .5rem;
+		margin-bottom: 1rem;
+		border-width: 0;
+		border-top: 1px solid #b3b3b3;
+	}
+	/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+	/*
+Note: The best way to structure the use of media queries is to create the queries
+near the relevant code. For example, if you wanted to change the styles for buttons
+on small devices, paste the mobile query code up in the buttons section and style it
+there.
+*/
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {}
+	@media screen and (max-height: 450px) {}
+	/* Larger than mobile */
+	@media (min-width: 400px) {}
+	/* Larger than phablet (also point when grid becomes active) */
+	@media (min-width: 550px) {}
+	/* Larger than tablet */
+	@media (min-width: 750px) {}
+	/* Larger than desktop */
+	@media (min-width: 1000px) {}
+	/* Larger than Desktop HD */
+	@media (min-width: 1200px) {}

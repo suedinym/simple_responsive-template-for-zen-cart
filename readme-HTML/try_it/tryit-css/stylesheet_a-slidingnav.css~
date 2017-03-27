@@ -1,0 +1,74 @@
+ .hamburger{
+	float: left;
+    display: inline-block;
+    color: white;
+    padding: 1.2rem;
+    text-decoration: none;
+     font-size: 1em;
+         padding: .66rem .5rem;
+}/* sliding  vertical navigation
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#slidingSideNav {
+	height: 100%;
+	width: 0%;
+}
+#slidingSideNav:target {
+	width: 40%;
+}
+.overlay {
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	background-color: #262626; /*changes the background color of the overlay*/
+	overflow-y: hidden;
+	transition: 0.5s;
+}
+.side-overlay-content {
+	position: relative;
+	text-align: left;
+}
+.side-nav-header {
+	font-size: 1rem;
+	color: white;
+	padding: 1.5rem 0 0 2rem;
+	margin: 1.5rem 0 0 0;
+	font-size: 1.25em;
+	font-weight: bold;
+}
+.overlay a {
+	padding: .5rem 3rem;
+	text-decoration: none;
+	font-size: 1.5rem; /*changes the font size of the category links*/
+	font-weight: bold;
+	color: #818181; /*changes the color of the category links*/
+	display: block;
+	transition: 0.3s;
+}
+.overlay a:hover, .overlay a:focus {
+	color: #f1f1f1; /*changes the hover color of the category links*/
+}
+a.sideClosebtn {
+	position: absolute;
+	top: 2%;
+	right: 5%;
+	font-size: 2em;
+	z-index: 15;
+}
+@media screen and (max-height: 450px) {
+	.overlay {
+		overflow-y: auto;
+	}
+	.overlay a {
+		font-size: 2rem;
+	}
+}
+@media only screen and (max-width: 479px) {
+	#slidingSideNav:target {
+		width: 100%;
+	}
+	.sideClosebtn {
+		right: 2%;
+	}
+}

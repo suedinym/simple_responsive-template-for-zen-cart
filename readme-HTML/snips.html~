@@ -1,0 +1,333 @@
+
+<div class="wrapper">
+<div class="border-left">
+<h1 id="one">Support/Help</h1>
+Free or personal support
+</div>
+<div class="icons">
+<div class="icon-inner">
+<a href=""  target="_blank" ><img src="http://www.picaflor-azul.com/pica/install/support1.png" alt="support" /></a>
+<br /><br />
+<a href=""   target="_blank">Free support is available through the support thread on the Zen Cart Forum</a>.
+</div>
+<div class="icon-inner">
+<a href="http://www.picaflor-azul.com/index.php?main_page=contact_us"   target="_blank"><img src="http://www.picaflor-azul.com/pica/install/email.png" alt="email" /></a>
+<br /><br />
+<a href="http://www.picaflor-azul.com/index.php?main_page=contact_us"  target="_blank" >For direct, personal support, email us for a quote</a>.
+</div>
+<div class="icon-inner">
+<a href="http://www.picaflor-azul.com/index.php?main_page=page&amp;id=43"   target="_blank"><img src="http://www.picaflor-azul.com/pica/install/faqs.png" alt="faqs" /></a>
+<br /><br />
+<a href="http://www.picaflor-azul.com/index.php?main_page=page&amp;id=43"  target="_blank" >Before asking any questions, check our FAQ's for your answer</a>.
+</div>
+<br class="clearBoth" />
+</div>
+</div>
+
+<div class="wrapper">
+<div class="border-left">
+<h1 id="two" class="h1-color">The Complete Installation Guide</h1>
+<h1 id="ione">Pre-Installation: Backup Files & Database</h1>
+Don't skip this!
+</div>
+<div class="grey">
+
+<p class="green-video white">
+<a href="http://www.picaflor-azul.com/index.php?main_page=product_info&amp;cPath=99_106&amp;products_id=14637"   target="_blank">Watch an Easy Help Zen Cart Video Tutorial of this step HERE</a>
+</p>
+<p>
+<br />
+1. Go to your host cpanel and select the backup wizard:<br />
+<br />
+<img src="http://www.picaflor-azul.com/pica/install/backup-wizard.jpg" title="Easy Help Zen Cart Tutorial&amp;trade;:  How to Install a New Template" alt="backup wizard Easy Help Zen Cart Tutorial&amp;trade;:  How to Install a New Template" /><br />
+<br />
+2. Click on Backup:<br />
+<br />
+<img src="http://www.picaflor-azul.com/pica/images/backup-wizard-2.jpg" title="Easy Help Zen Cart Tutorial&amp;trade;:  How to Install a New Template" alt="backup wizard 2 Easy Help Zen Cart Tutorial&amp;trade;:  How to Install a New Template" /><br />
+<br />
+3. Click on Full Backup:<br />
+<br />
+<img src="http://www.picaflor-azul.com/pica/images/backup-wizard-3.jpg" title="Easy Help Zen Cart Tutorial&amp;trade;:  How to Install a New Template" alt="backup wizard 3 Easy Help Zen Cart Tutorial&amp;trade;:  How to Install a New Template" /><br />
+<br />
+4. Click on Generate Backup:<br />
+<br />
+<img src="http://www.picaflor-azul.com/pica/images/backup-wizard-4.jpg" title="Easy Help Zen Cart Tutorial&amp;trade;:  How to Install a New Template" alt="backup wizard 4 Easy Help Zen Cart Tutorial&amp;trade;:  How to Install a New Template" /><br />
+<br />
+<img src="http://www.picaflor-azul.com/pica/images/backup-wizard-5.jpg" title="Easy Help Zen Cart Tutorial&amp;trade;:  How to Install a New Template" alt="backup wizard 5 Easy Help Zen Cart Tutorial&amp;trade;:  How to Install a New Template" />
+</div>
+</div>
+
+<div class="wrapper">
+<div class="border-left">
+	<h1 id="ithree">Step 1:  Unzip and Prepare Package:</h1>
+</div>
+<div class="grey">
+<p>
+1.  Extract the package contents using your favorite file extraction utility.
+</p>
+<p>
+2.  Rename the following directories to your template override directory name:
+<br />
+<br />
+<span class="red">includes/languages/english/extra_definitions/</span><span class="php-green">YOUR_TEMPLATE</span>
+<br />
+<span class="red">includes/templates/</span><span class="php-green">YOUR_TEMPLATE</span>
+</p>
+<p>
+3.  In your favorite plain text editor, open the <span class="red">includes/templates/YOUR_TEMPLATE/common/tpl_main_page.php</span> file.  If you don't already have an override for this file, create one by copying the <span class="red">includes/templates/template_default/common/tpl_main_page.php</span>  to <span class="red">includes/templates/YOUR_TEMPLATE/common/tpl_main_page.php</span>.
+</p>
+<p>
+Find this code:
+</p>
+<p class="white-bk">
+<code>
+&lt;?php
+ /**                                                                                                                                                                                                <br />                             
+  * prepares and displays header output                                                                                                                                                             <br />                             
+  *                                                                                                                                                                                                 <br />                             
+  */
+<br />
+  if (CUSTOMERS_APPROVAL_AUTHORIZATION == 1 && CUSTOMERS_AUTHORIZATION_HEADER_OFF == 'true' and ($_SESSION['customers_authorization'] != 0 or $_SESSION['customer_id'] == '')) {
+<br />
+    $flag_disable_header = true;
+<br />
+  }
+<br />
+  require($template->get_template_dir('tpl_header.php',DIR_WS_TEMPLATE, $current_page_base,'common'). '/tpl_header.php');?&gt;
+</code>
+</p>
+<p>
+Directly below this code, add this:
+</p>
+<p class="white-bk">
+<code>
+&lt;?php
+<br />
+if ($this_is_home_page) {
+<br />
+?&gt;
+<br /> 
+&lt;?php require($template-&gt;get_template_dir('tpl_rotating_slider.php',DIR_WS_TEMPLATE, $current_page_base,'common'). '/tpl_rotating_slider.php');?&gt;
+<br />
+&lt;?php
+<br />                                                                                                                                                                             }
+?&gt;
+</code>
+</p>
+<p>
+Save the file.
+</p>
+</div>
+</div>
+
+<div class="wrapper">
+<div class="border-left">
+	<h1 id="itwo">Step 2:  Upload the Files:</h1>
+<h1 id="uone">Method 1: FTP with Filezilla</h1>
+</div>
+
+<div class="grey">
+<p class="green-video white">
+<a href="http://www.picaflor-azul.com/index.php?main_page=product_info&amp;cPath=99_101&amp;products_id=14618" target="_blank">Watch an Easy Help Zen Cart Video Tutorial of step 1 - 4 HERE</a>
+</p>
+1.  Enter the address of the server, your username, password, and port if needed into the top of the Quickconnect bar.<br />
+<br />
+<img src="http://www.picaflor-azul.com/pica/images/filezilla.jpg" title="Easy Help Zen Cart Tutorial&amp;trade;:  How to Install a New Template" alt="filezilla Easy Help Zen Cart Tutorial&amp;trade;:  How to Install a New Template" /><br />
+<br />
+2.  Once you are connected navigate to the directory on your local machine where you unzipped the template package in the right side of window and navigate to your store root directory on your web host in the left side of the window .<br />
+<br />
+<img src="http://www.picaflor-azul.com/pica/images/filezilla-1.jpg" title="Easy Help Zen Cart Tutorial&amp;trade;:  How to Install a New Template" alt="filezilla 1 Easy Help Zen Cart Tutorial&amp;trade;:  How to Install a New Template" /><br />
+<br />
+3.  Drag the includes directory and drop it in the folder above the includes folder.<br />
+<br />
+<img src="http://www.picaflor-azul.com/pica/images/filezilla-2.jpg" title="Easy Help Zen Cart Tutorial&amp;trade;:  How to Install a New Template" alt="filezilla 2 Easy Help Zen Cart Tutorial&amp;trade;:  How to Install a New Template" /><br />
+</div>
+
+<div class="border-left">
+<h1 id="utwo">Upload Method 2:  CPanel File Manager</h1>
+</div>
+<div class="grey">
+<p>
+Zip up the includes folder and name it "includes.zip". <br />
+<br />
+1. Select Legacy File Manager:<br />
+<br />
+<img src="http://www.picaflor-azul.com/pica/install/file-mamager.jpg" title="Easy Help Zen Cart Tutorial&amp;trade;:  How to Install a New Template" alt="file mamager Easy Help Zen Cart Tutorial&amp;trade;:  How to Install a New Template" /><br />
+<br />
+2. Select Web Root from the pop up window:<br />
+<br />
+<img src="http://www.picaflor-azul.com/pica/install/file-manager-1a.jpg" title="Easy Help Zen Cart Tutorial&amp;trade;:  How to Install a New Template" alt="file manager 1a Easy Help Zen Cart Tutorial&amp;trade;:  How to Install a New Template" /><br />
+<br />
+3. Click on Upload Files:<br />
+<br />
+<img src="http://www.picaflor-azul.com/pica/images/file-manager-2.jpg" title="Easy Help Zen Cart Tutorial&amp;trade;:  How to Install a New Template" alt="file manager 2 Easy Help Zen Cart Tutorial&amp;trade;:  How to Install a New Template" /><br />
+<br />
+4. Click on Browse and choose upload.zip:<br />
+<br />
+<img src="http://www.picaflor-azul.com/pica/images/file-manager-3.jpg" title="Easy Help Zen Cart Tutorial&amp;trade;:  How to Install a New Template" alt="file manager 3 Easy Help Zen Cart Tutorial&amp;trade;:  How to Install a New Template" /><br />
+<br />
+5. Click on Upload:<br />
+<br />
+<img src="http://www.picaflor-azul.com/pica/images/file-manager-4.jpg" title="Easy Help Zen Cart Tutorial&amp;trade;:  How to Install a New Template" alt="file manager 4 Easy Help Zen Cart Tutorial&amp;trade;:  How to Install a New Template" /><br />
+<br />
+6. Click on includes.zip.  In the Right hand top box, click on extract file contents:<br />
+<br />
+<img src="http://www.picaflor-azul.com/pica/images/file-manager-5.jpg" title="Easy Help Zen Cart Tutorial&amp;trade;:  How to Install a New Template" alt="file manager 5 Easy Help Zen Cart Tutorial&amp;trade;:  How to Install a New Template" /><br />
+</div>	
+</div>
+
+<div class="wrapper">
+<div class="border-left">
+	<h1 id="iten">Step 3: Customize the Slide Show:</h1>
+<h1>Add Your Images</h1>
+</div>
+<div class="grey">
+<p>
+1.  Create your slider images.  They should be 310 pixels wide by 465 pixels high. They should be named:<br />
+<br />
+1.jpg
+<br />
+2.jpg
+<br />
+3.jpg
+<br />
+4.jpg
+<br />
+5.jpg
+<br />
+6.jpg
+<br />
+7.jpg
+<br />
+8.jpg
+<br />
+9.jpg
+<br />
+10.jpg
+<br />
+11.jpg
+<br />
+12.jpg
+<br />
+13.jpg
+<br />
+14.jpg
+<br />
+15.jpg
+<br />
+16.jpg
+</p>
+<p>
+2.  Upload your images to <span class="red">includes/templates/YOUR_TEMPLATE/images</span>.
+</p>
+</div>
+
+
+<div class="border-left">
+<h1 id="ssone">Using Images With Different Names</h1>
+</div>
+<div class="grey">
+<p>
+In your favorite plain text editor, open the <span class="php-green">includes/languages/english/extra_definitions/YOUR_TEMPLATE/rotating_image_slider.php</span> file.
+</p>
+<p>
+Find this code:
+</p>
+Find this code:
+</p>
+<p class="white-bk">
+<code class="php-black">define(</code><code class="php-blue">IMAGE1</code><code class="php-black">,</code><code class="php-green">'1.jpg'</code><code class="php-black">);
+<br />
+          define(</code><code class="php-blue">IMAGE2</code><code class="php-black">,</code><code class="php-green">'2.jpg'</code><code class="php-black">);<br />
+          define(</code><code class="php-blue">IMAGE3</code><code class="php-black">,</code><code class="php-green">'3.jpg'</code><code class="php-black">);<br />
+          define(</code><code class="php-blue">IMAGE4</code><code class="php-black">,</code><code class="php-green">'4.jpg'</code><code class="php-black">);<br />
+          define(</code><code class="php-blue">IMAGE5</code><code class="php-black">,</code><code class="php-green">'5.jpg'</code><code class="php-black">);<br />
+          define(</code><code class="php-blue">IMAGE6</code><code class="php-black">,</code><code class="php-green">'6.jpg'</code><code class="php-black">);<br />
+          define(</code><code class="php-blue">IMAGE7</code><code class="php-black">,</code><code class="php-green">'7.jpg'</code><code class="php-black">);<br />
+          define(</code><code class="php-blue">IMAGE8</code><code class="php-black">,</code><code class="php-green">'8.jpg'</code><code class="php-black">);<br />
+          define(</code><code class="php-blue">IMAGE9</code><code class="php-black">,</code><code class="php-green">'9.jpg'</code><code class="php-black">);<br />
+          define(</code><code class="php-blue">IMAGE10</code><code class="php-black">,</code><code class="php-green">'10.jpg'</code><code class="php-black">);<br />
+          define(</code><code class="php-blue">IMAGE11</code><code class="php-black">,</code><code class="php-green">'11.jpg'</code><code class="php-black">);<br />
+          define(</code><code class="php-blue">IMAGE12</code><code class="php-black">,</code><code class="php-green">'12.jpg'</code><code class="php-black">);<br />
+          define(</code><code class="php-blue">IMAGE13</code><code class="php-black">,</code><code class="php-green">'13.jpg'</code><code class="php-black">);<br />
+          define(</code><code class="php-blue">IMAGE14</code><code class="php-black">,</code><code class="php-green">'14.jpg'</code><code class="php-black">);<br />
+          define(</code><code class="php-blue">IMAGE15</code><code class="php-black">,</code><code class="php-green">'15.jpg'</code><code class="php-black">);<br />
+          define(</code><code class="php-blue">IMAGE16</code><code class="php-black">,</code><code class="php-green">'16.jpg'</code><code class="php-black">);</code>
+
+</p>
+<p>
+Replace 1.jpg, etc. with the names of your images, making sure to keep the single quotes intact.
+</p>
+<p>
+Save the file.
+</p>
+</div>
+
+
+<div class="border-left">
+<h1 id="ssthree">Add Links to the Images</h1>
+</div>
+<div class="grey">
+<p>
+In your favorite plain text editor, open the <span class="php-green">includes/templates/YOUR_TEMPLATE/common/tpl_home_slider.php</span> file.
+</p>
+<p>
+Find this code:
+</p>
+<p class="white-bk">
+<code class="php-black">define(</code><code class="php-blue">URL1</code><code class="php-black">,</code><code class="php-green">'http://www.picaflor-azul.com'</code><code class="php-black">);<br />
+          define(</code><code class="php-blue">URL2</code><code class="php-black">,</code><code class="php-green">'http://www.picaflor-azul.com'</code><code class="php-black">);<br />
+          define(</code><code class="php-blue">URL3</code><code class="php-black">,</code><code class="php-green">'http://www.picaflor-azul.com'</code><code class="php-black">);<br />
+          define(</code><code class="php-blue">URL4</code><code class="php-black">,</code><code class="php-green">'http://www.picaflor-azul.com'</code><code class="php-black">);<br />
+          define(</code><code class="php-blue">URL5</code><code class="php-black">,</code><code class="php-green">'http://www.picaflor-azul.com'</code><code class="php-black">);<br />
+          define(</code><code class="php-blue">URL6</code><code class="php-black">,</code><code class="php-green">'http://www.picaflor-azul.com'</code><code class="php-black">);<br />
+          define(</code><code class="php-blue">URL7</code><code class="php-black">,</code><code class="php-green">'http://www.picaflor-azul.com'</code><code class="php-black">);<br />
+          define(</code><code class="php-blue">URL8</code><code class="php-black">,</code><code class="php-green">'http://www.picaflor-azul.com'</code><code class="php-black">);<br />
+          define(</code><code class="php-blue">URL9</code><code class="php-black">,</code><code class="php-green">'http://www.picaflor-azul.com'</code><code class="php-black">);<br />
+          define(</code><code class="php-blue">URL10</code><code class="php-black">,</code><code class="php-green">'http://www.picaflor-azul.com'</code><code class="php-black">);<br />
+          define(</code><code class="php-blue">URL11</code><code class="php-black">,</code><code class="php-green">'http://www.picaflor-azul.com'</code><code class="php-black">);<br />
+          define(</code><code class="php-blue">URL12</code><code class="php-black">,</code><code class="php-green">'http://www.picaflor-azul.com'</code><code class="php-black">);<br />
+          define(</code><code class="php-blue">URL13</code><code class="php-black">,</code><code class="php-green">'http://www.picaflor-azul.com'</code><code class="php-black">);<br />
+          define(</code><code class="php-blue">URL14</code><code class="php-black">,</code><code class="php-green">'http://www.picaflor-azul.com'</code><code class="php-black">);<br />
+          define(</code><code class="php-blue">URL15</code><code class="php-black">,</code><code class="php-green">'http://www.picaflor-azul.com'</code><code class="php-black">);<br />
+          define(</code><code class="php-blue">URL16</code><code class="php-black">,</code><code class="php-green">'http://www.picaflor-azul.com'</code><code class="php-black">);</code>
+
+</p>
+<p>
+Replace the urls between the single quotes, shown here in green,  with your link urls, making sure to keep the single quotes intact.
+</p>
+</div>
+
+
+<div class="wrapper">
+<div class="border-left">
+	<h1 id="itwenty-one">Step 4:  (Optional) Adjust the Position of the Slide Show:</h1>
+	</div>
+<div class="grey">
+<p>
+If there is too much space between your header and the slideshow, add this to the <b>.content</b> in your <span class="red">includes/templates/YOUR_TEMPLATE/css/stylehseet_rotating_image_slider.css</span> file:
+</p>
+<p>
+<span class="php-green">margin-top:-30px;</span>
+</p>
+<p>
+Adjust the amount of pixels to suit your site.
+</p>
+	</div>
+</div>
+
+
+
+<div class="wrapper">
+<div class="border-left">
+	<h1 id="ififteen">To Un-Install the Plugin:</h1>
+	</div>
+<div class="grey">
+<p>
+Remove all files in the plugin package.
+</p>
+<p>
+Restore your backup for <span class="red">includes/templates/YOUR_TEMPLATE/common/tpl_main_page.php</span>.
+</p>
+	</div>
+</div>

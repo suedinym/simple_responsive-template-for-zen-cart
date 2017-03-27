@@ -1,0 +1,205 @@
+/* Modals are based on the tutorial article "Creating a modal window with HTML5 & CSS3" at Webdesigner Depot by KEENAN PAYNE. http://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/
+Two modal version at http://jsfiddle.net/3Vykc/
+*/
+/*
+* Multiple photo css modal
+* Copyright 2017, Susan Jensen
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+*/
+
+/*#Single or Mulitple modal base css
+================================================== */
+
+	.modalDialog {
+		position: fixed;
+		font-family: Arial, Helvetica, sans-serif;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: rgba(0, 0, 0, 0.7);
+		z-index: 99999;
+		opacity: 0;
+		-webkit-transition: opacity 400ms ease-in;
+		-moz-transition: opacity 400ms ease-in;
+		transition: opacity 400ms ease-in;
+		pointer-events: none;
+	}
+	.modalDialog img {
+		width: 95%;
+	}
+	.modalDialog:target {
+		opacity: 1;
+		pointer-events: auto;
+	}
+	.modalDialog>div {
+		width: 40%;
+		position: relative;
+		margin: 25px auto;
+		padding: 5px 20px 13px 20px;
+		border-radius: 10px;
+		background: #fff;
+	}
+	 
+	.modal-close {
+		color: black;
+		font-size: 4rem;
+		position: absolute;
+		right: 5%;
+		text-decoration: none;
+	}
+	@media only screen and (max-width: 479px) {
+		.modal-close  {
+		padding: 0;
+		right: 3%;
+		top: -1%;
+		}
+	}
+	.modal-close:hover {
+		color: red;
+	}
+	
+	.modal-head { 
+	margin: 8% 0 4% 0;
+	padding: 0;
+	
+	}
+	
+		.modal-head4 {
+			font-size: rem;
+	margin: 8% 0 4% 0;
+	padding: 0;
+	
+	}
+		.gal1, .gal2, .gal3, .gal4 { 
+		 display: block;
+    margin-left: auto;
+    margin-right: auto;
+		 background: #fff;
+	border-radius: 10%;
+	box-shadow: .5rem .5rem 1rem #414a49;}
+	
+	.gal1 {width: 45%;}
+	.gal2 {width: 60%}
+	.gal3 {width: 85%}
+	.gal4 {width: 80%}
+	.view-detail {position: relative;}
+	
+	.open-modal {
+	position: absolute;
+   bottom:-3%;
+   left:  70%;
+    width: 5%;	
+	}
+	
+	.open-modal-gal2 {
+	position: absolute;
+   bottom:-4%;
+   left:  75%;
+    width: 8%;	
+	}
+	
+	
+ .open-modal-gal3 {
+	position: absolute;
+   bottom:-3%;
+   left:  87%;
+    width: 10%;	
+	}
+	
+	 .open-modal-gal4 {
+	position: absolute;
+   bottom:-4%;
+   left:  85%;
+    width: 14%;	
+	}
+	
+	@media screen and (max-width: 479px) {
+		.modalDialog>div {
+			width: 80%
+		}
+	.gal1, .gal2, .gal3, .gal4 {width: 80%;}
+	.open-modal, .open-modal-gal2, .open-modal-gal3, .open-modal-gal4 {
+position: absolute;
+   bottom:-4%;
+   left:  85%;
+    width: 12%;	
+    }	
+   
+    }
+     /* #LOGIN FORM
+================================================== */
+
+.login-container {
+	width: 25%;
+	border: 10px double #999;
+	border-radius: 15%;
+ }
+.img-container {
+	text-align: center;
+}
+img.login-avatar {
+	width: 25%;
+	border-radius: 50%;
+	margin-top: 5%;
+}
+.login {
+	background-color:#404040; 
+	color: white;
+	padding: 10px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	border-radius: 5px;
+	clear: both;
+}
+
+.login:hover {background-color:#595959; }
+
+.login-info input[type="text"], .login-info input[type="password"] {
+	background-color: #fff;
+	width: 95%;
+	border: 1px solid #D1D1D1;
+	border-radius: 4px;
+	height: 20px;
+	padding: 6px 0 2px 5px;
+	margin: 8px;
+}
+.login-info input[type="text"]:focus, .login-info input[type="password"]:focus {
+	border: 1px solid #10a7d5;
+	background-color: #f2f2f2;
+	outline: 0;
+}
+.login-info {padding-bottom: 5%;}
+
+.login-modal-close {
+	width: auto;
+	font-size: 15px;
+	padding: 5px 10px;
+	background-color: #808080;
+	color: white;
+	text-decoration: none;
+	border-radius: 5%;
+	float: right;
+}
+.login-modal-close:hover {
+	background-color: #e09f6f;
+}
+.login-bottom-container {
+	text-align: center;
+	padding: 5px;
+	margin-bottom: 5px;
+}
+span.psw {
+	padding-top: 16px;
+}
+@media screen and (max-width: 479px) {
+	span.psw {
+	font-size: 12px;
+}
+}
+
+
+

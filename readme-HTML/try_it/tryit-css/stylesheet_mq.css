@@ -1,0 +1,29 @@
+/* Altered by SusanJensen (suedinym.com)*/
+#mainWrapper {
+	width: 100%;
+	}
+
+#logoWrapper{
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	}
+	#logo{
+	position: absolute;
+	top: 0;
+	left: 5%;}
+
+	@media only screen and (max-width: 900px) {
+			#tagline {
+	font-size: 1rem;
+	}		
+	}
+	
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+/* If you want to show the right column under the center column on mobile devices, comment out or delete .columnRight below */
+@media only screen and (max-width: 550px) {
+	#tagline, .columnLeft, .columnRight {
+	display: none;
+	}
+}
+
